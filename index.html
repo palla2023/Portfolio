@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bhanuchandra</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+  <!--Navbar  -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">PALLA</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#showcase">Education</a></li>
+        <li><a href="#skillinfo">SkillSet</a></li>
+        <li><a href="#projectinfo">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+<div class="jumbotron text-center" id="Mprofile">
+  <div class="profimage">
+    <img src="images/profile.jpg" width="190px" height="195px">
+  </div>
+  <div class="headname">
+  <h2>PALLA BHANU CHANDRA</h2>
+  </div>
+  <div class="proffession">
+  <p class="text-center">UI-DEVELEOPER.</p>
+  </div>
+</div><hr>
+
+<!--ANUMATION PAGE START  -->
+<section id="showcase">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-6">
+        <div class="showcase-left">
+          <img src="images/edu.jpg" width="450px" height="350px">
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <div class="showcase-right">
+          <h1>EDUCATION</h1>
+          <p>This element provide my Complete Education details</p>
+        </div>
+        <a href="Education.php" class="btn btn-default btn-lg showcase-btn">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<br><br>
+<section id="skillinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-6">
+        <div class="skillinfo-left">
+          <h1>SKILL SET</h1>
+          <p>This element provide my Complete Education details</p>
+        </div>
+        <a href="skillset.php" class="btn btn-default btn-lg showcase-btn">Read More</a>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <div class="skillinfo-right">
+          <img src="images/man.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br><br>
+<section id="projectinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-6">
+        <div class="projectinfo-left">
+          <img src="images/projects.png">
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <div class="projectinfo-right">
+          <h1>PROJECTS</h1>
+          <p>This element provide my Complete Education details</p>
+        </div>
+        <a class="btn btn-default btn-lg showcase-btn">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<hr>
+
+<footer>
+  <p class="text-center">Designed and Developed by Palla Bhanuchandra <br> Copyright &copy; 2017</p>
+</footer>
+
+<script
+src="https://code.jquery.com/jquery-3.2.1.js"
+integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+    window.sr = ScrollReveal();
+    sr.reveal('.navbar', {
+      duration: 2000,
+      origin:'bottom'
+    });
+    sr.reveal('.showcase-left', {
+      duration: 2000,
+      origin:'top',
+      distance:'300px'
+    });
+    sr.reveal('.profimage', {
+      duration: 3000,
+      origin:'top',
+      distance:'300px'
+    });
+    sr.reveal('.headname', {
+      duration: 3000,
+      origin:'bottom',
+      distance:'300px'
+    });
+    sr.reveal('.showcase-right', {
+      duration: 2000,
+      origin:'right',
+      distance:'300px'
+    });
+    sr.reveal('.showcase-btn', {
+      duration: 2000,
+      delay: 2000,
+      origin:'bottom'
+    });
+    sr.reveal('#testimonial div', {
+      duration: 2000,
+      origin:'bottom'
+    });
+    sr.reveal('.skillinfo-left', {
+      duration: 2000,
+      origin:'left',
+      distance:'300px',
+      viewFactor: 0.2
+    });
+    sr.reveal('.skillinfo-right', {
+      duration: 2000,
+      origin:'bottom',
+      distance:'300px',
+      viewFactor: 0.2
+    });
+    sr.reveal('.projectinfo-left', {
+      duration: 2000,
+      origin:'top',
+      distance:'300px',
+      viewFactor: 0.2
+    });
+    sr.reveal('.projectinfo-right', {
+      duration: 2000,
+      origin:'right',
+      distance:'300px',
+      viewFactor: 0.2
+    });
+</script>
+
+<script>
+$(function() {
+  // Smooth Scrolling
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+</body>
+
+</html>
